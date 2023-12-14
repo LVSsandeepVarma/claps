@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 5043032, 2022-06-18T04:52:19-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Faktum-SemiBold by Rene Bieder
+ * URL: https://www.myfonts.com/fonts/rene-bieder/faktum/semi-bold/
+ * Copyright: Copyright © 2019 by Rene Bieder. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2022 MyFonts Inc
+*/
+  
+@font-face {
+    font-family: "Faktum";
+    src: url('/faktum.woff2') format('woff2'), url('/faktum.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-feature-settings: 'cv11' on, 'cv10' on, 'cv09' on, 'cv08' on, 'cv07' on, 'cv06' on, 'cv05' on, 'cv04' on, 'cv03' on, 'cv01' on, 'cv02' on, 'ss04' on, 'ss09' on, 'ss08' on, 'salt' on, 'ss01' on, 'ss02' on, 'ss05' on;
+  }
+  
+  p {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-feature-settings: 'ss01' on, 'ss03' on, 'cv10' on, 'cv09' on, 'cv07' on, 'cv06' on, 'cv05' on, 'cv04' on, 'cv03' on, 'cv01' on, 'cv02' on, 'ss08' on, 'ss09' on, 'ss10' on;
+  }
+
+  .hBBWMR{
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    margin: 8px 0px 0px;
+    font-weight: 400;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    text-align: center;
+    word-break: normal;
+    text-decoration: none;
+    text-transform: none;
+    white-space: normal;
+    cursor: inherit;
+    appearance: none;
+  }
