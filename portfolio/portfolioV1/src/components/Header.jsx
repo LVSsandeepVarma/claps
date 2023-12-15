@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-200  drop-shadow-lg p-4 fixed w-full" >
+    <nav className="bg-blue-200  drop-shadow-lg p-4 top-0 fixed w-full" >
       <div className="flex justify-between items-center">
         <a href="/" className="text-lg font-bold">Navbar</a>
         <button onClick={toggleNav} className="text-gray-500 md:hidden">

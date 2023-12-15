@@ -1,4 +1,5 @@
 import './App.css'
+import ContactUs from './components/ContactUs'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import Projects from './components/Projects'
@@ -11,11 +12,12 @@ function App() {
   return (
     <>
       <Header/>
-      <Container>
+      <Container className='mt-24'>
       <HeroSection/>
       <Services/>
       <Projects/>
-      <Testimonials/>
+        <Testimonials />
+        <ContactUs/>
       </Container>
     </>
   )

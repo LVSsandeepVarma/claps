@@ -1,4 +1,3 @@
-import {Card} from "@mui/material"
 export default function Services(){
   const servicesmap = [
     {
@@ -43,20 +42,48 @@ export default function Services(){
     },
 
   ]
-    return(
+    return (
       <>
-      <div className="z-[-1] container pt-24 bg-gradient-to-r from-slate-100 to-white to-blue-200 rounded-sm text-center p-3 hero-bg ">
-        <h1 className="text-center w-full !font-bold md:!text-4xl"> Elevate Your Business with Innovative Software Solutions</h1>1
-        <div className="services grid grid-cols-3 justify-items-center flex-wrap gap-7 ">
-          {servicesmap.map((service, ind)=>(
-            <Card className="border-2 border-gray max-w-[200px] p-2 rounded  shadow-xl m-3" key={ind}>
-              <img src={service.img} />
-              <p className="text-lg font-semibold">{service.service}</p>
-              <p className="text-xs text-start">{service.description}</p>
-            </Card>
-          ))}
+        <div className="z-[-1] container pt-24  rounded-sm text-center p-3 hero-bg ">
+          <h1 className="text-center w-full !font-bold md:!text-4xl">
+            {" "}
+            Elevate Your Business with Innovative Software Solutions
+          </h1>
+
+          <div className="services flex justify-around items-center flex-wrap gap-7 ">
+            {servicesmap.map((service, ind) => (
+              
+                  <div key={ind} className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-[25%] ">
+                    <div className="relative  overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                      <img
+                        src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                        alt="card-image"
+                        className="object-fit"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                        UI/UX Review Check
+                      </h5>
+                      <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                        The place is close to Barceloneta Beach and bus stop
+                        just 2 min by walk and near to &ldquo;Naviglio&ldquo;
+                        where you can enjoy the main night life in Barcelona.
+                      </p>
+                    </div>
+                    <div className="p-6 pt-0">
+                      <button
+                        className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                        type="button"
+                      >
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                
+            ))}
+          </div>
         </div>
-      </div>
       </>
-    )
+    );
 }
